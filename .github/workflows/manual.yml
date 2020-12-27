@@ -41,3 +41,7 @@ jobs:
           realpath $file
           readelf -a $file
           echo
+        done
+    - run: |
+        tar -czf ./artifact.tar.gz -C ./output
+        ls -la
