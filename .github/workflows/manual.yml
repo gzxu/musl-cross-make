@@ -36,3 +36,8 @@ jobs:
         make install
     - run: |
         find ./output
+    - run: |
+        for file in ./output/bin/*; do
+          realpath $file
+          readelf -a $file
+          echo
