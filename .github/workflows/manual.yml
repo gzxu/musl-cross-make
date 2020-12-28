@@ -43,5 +43,5 @@ jobs:
           echo
         done
     - run: |
-        tar -czf ./artifact.tar.gz -C ./output
+        tar -czf ./artifact.tar.gz ./output
         ls -la
